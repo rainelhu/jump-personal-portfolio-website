@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- All subsequent HTML is contained within the <html> element -->
+<html lang="en">
+<!-- Our Meta Data (setup) for this page goes in <head> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding Bootstrap 5 -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- End of Bootstrap import from CDN -->
+
+    <title>Home - Raine Hu</title>
+</head>
+<!-- All DOM data to be rendered /displayed is in the <body> -->
+
+<body>
+    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item me-3"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item me-3"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home">
+        <br>
+        <h1 class="text-center">Hello, I'm Raine Hu!</h1>
+        <p class="text-center">
+            I am a software developer based in the Greater Orlando region of Florida.
+        </p>
+        <img class="rounded mx-auto d-block img-fluid" style="max-width: 15%;" src="images/profilepicture.jpg"
+            alt="Profile Picture">
+    </div>
+
+    <div id="about">
+        <br><br>
+        <h2 class="ms-4">About</h2>
+        <p class="ms-4 me-4">
+            My most recent work experience was at ADP as an Associate Application Developer. At ADP, I worked on a
+            script to
+            calculate the approximate accuracy of an extraction model that extracts information from PDFs and converts
+            it to
+            JSON format. I also worked with the data science team who created and maintained the extraction model to
+            convert
+            my API calls into something that could be run as a batch job using Databricks.
+            <br><br>
+            Before that, I worked at Amazon for a summer internship. At Amazon, I used AWS tools such as S3, Lambda,
+            Amazon Translate, and Amazon Comprehend to take seller feedback, translate it into English if necessary, and
+            then use Amazon Comprehend to create topics using topic modeling.
+            <br>
+        </p>
+        <br>
+        <h4 class="ms-4">Work Experience</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped ms-4">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ADP</td>
+                        <td>Alpharetta, GA</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Created Python scripts and functions to extract and compare data using Pandas and
+                                    Numpy
+                                    and download and upload data using AWS boto3 (specific AWS SDK for Python).
+                                </li>
+                                <li>
+                                    Worked with a data science team to incorporate code using Databricks so that scripts
+                                    could be automated to run as a batch job every week instead of needing to be
+                                    manually
+                                    triggered by API calls using Postman.
+                                </li>
+                            </ul>
+                        </td>
+                        <td>August 2021 - August 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon</td>
+                        <td>Detroit, MI</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Automated the translation of feedback from non-English languages into English using
+                                    Amazon Translate, AWS Lambda, and AWS S3.
+                                </li>
+                                <li>
+                                    Used Amazon Comprehend to extract main topics from feedback that was provided from
+                                    sellers about the product and user interface.
+                                </li>
+                            </ul>
+                        </td>
+                        <td>June 2020 - August 2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="contact">
+        <br><br><br>
+        <h2 class="text-center">
+            <strong>Get in Touch</strong>
+        </h2>
+        <form action="./success.html">
+            <div class="ms-4 me-5 mb-4">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email here">
+                <br>
+                <label for="message" class="form-label">Message:</label>
+                <input type="text" class="form-control" name="message" id="message" placeholder="Enter message here">
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
